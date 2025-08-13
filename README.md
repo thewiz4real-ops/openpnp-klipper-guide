@@ -6,7 +6,7 @@ This guide fixes common pitfalls and clarifies the *“Z shows −61”* non‑i
 ## Quick Start
 1. **Bill of Materials:** See [10-bom.md](docs/10-bom.md)
 2. **Flash/Host Setup:** See [20-skr-mini-wsl2.md](docs/20-skr-mini-wsl2.md)
-**2.5. **Before Starting OpenPnP (each boot):** See [25-before-starting-openpnp.md](docs/25-before-starting-openpnp.md)
+2.5 **Before Starting OpenPnP (each boot):** See [25-before-starting-openpnp.md](docs/25-before-starting-openpnp.md)
 3. **OpenPnP ↔ Klipper driver (TCP bridge):** See [30-openpnp-driver.md](docs/30-openpnp-driver.md)
 4. **Head rotation via fake extruder (EM/E0):** See [40-rotation-extruder.md](docs/40-rotation-extruder.md)
 5. **Lights (ESP32 or SKR fans):** See [50-lights.md](docs/50-lights.md)
