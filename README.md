@@ -4,11 +4,12 @@
 This guide fixes common pitfalls and clarifies the *“Z shows −61”* non‑issue (camera focus vs. nozzle Z).
 
 ## Quick Start
-1. **Flash/Host Setup:** See [docs/10-skr-mini-wsl2.md](docs/10-skr-mini-wsl2.md)
-2. **OpenPnP ↔ Klipper driver (TCP bridge):** See [docs/20-openpnp-driver.md](docs/20-openpnp-driver.md)
-3. **Head rotation via fake extruder (EM/E0):** See [docs/30-rotation-extruder.md](docs/30-rotation-extruder.md)
-4. **Lights (ESP32 or SKR fans):** See [docs/40-lights.md](docs/40-lights.md)
-5. **Troubleshooting (Step → Problem → Solution):** See [docs/50-troubleshooting.md](docs/50-troubleshooting.md)
+1. **Bill of Materials:** See [+10-bom.md](docs/+10-bom.md)
+2. **Flash/Host Setup:** See [+20-skr-mini-wsl2.md](docs/+20-skr-mini-wsl2.md)
+3. **OpenPnP ↔ Klipper driver (TCP bridge):** See [+30-openpnp-driver.md](docs/+30-openpnp-driver.md)
+4. **Head rotation via fake extruder (EM/E0):** See [+40-rotation-extruder.md](docs/+40-rotation-extruder.md)
+5. **Lights (ESP32 or SKR fans):** See [+50-lights.md](docs/+50-lights.md)
+6. **Troubleshooting (Step → Problem → Solution):** See [+60-troubleshooting.md](docs/+60-troubleshooting.md)
 
 👉 Example configs live in [`configs/`](configs/).
 
