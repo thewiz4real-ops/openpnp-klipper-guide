@@ -1,4 +1,4 @@
-# Step 5 — Head Rotation on EM/E0 as Fake Extruder (Klipper)
+# Step 6 — Head Rotation on EM/E0 as Fake Extruder (Klipper)
 
 **Goal:** Drive the head rotation motor from the SKR Mini E3 V3 EM/E0 driver using Klipper’s `[extruder]` so we get TMC current control.
 
