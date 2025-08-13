@@ -36,10 +36,10 @@ M83
 - **Home command:** `G28` (or `OPNP_HOME` macro, see below)
 - **Get position:** `M114`
 - **Position regex:**  
-`(?i)X:(?<x>-?\d+\.?\d*)\s+Y:(?<y>-?\d+\.?\d*)\s+Z:(?<z>-?\d+\.?\d*)\s+E:(?<e>-?\d+\.?\d*)`
+`(?i)X:(?<X>-?\d+\.?\d*)\s+Y:(?<Y>-?\d+\.?\d*)\s+Z:(?<Z>-?\d+\.?\d*)\s+E:(?<E>-?\d+\.?\d*)`
 - **Move template (works):**
 ```
-G1 {x:X%.4f}{y:Y%.4f}{z:Z%.4f}{e:E%.4f}F{FeedRate:%.0f}
+G1 {X:X%.4f}{Y:Y%.4f}{Z:Z%.4f}{E:E%.4f}F{FeedRate:%.0f}
 ```
 > Tip: Enable “using-letter-variables” in the driver options.
 
