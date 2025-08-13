@@ -1,4 +1,4 @@
-# Step 4 — Lights (ESP32 serial **or** SKR fan headers)
+# Step 5 — Lights (ESP32 serial **or** SKR fan headers)
 
 Pick one approach.
 
