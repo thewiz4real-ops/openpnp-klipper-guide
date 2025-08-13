@@ -1,4 +1,4 @@
-# Step 5 — Troubleshooting (Step → Problem → Solution)
+# Step 6 — Troubleshooting (Step → Problem → Solution)
 
 ## A) Homing, Z travel, and the **“Z shows −61”** non‑issue
 - **What you saw:** Z reads something like **−61** in OpenPnP.
