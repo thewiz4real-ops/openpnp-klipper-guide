@@ -1,0 +1,474 @@
+<openpnp-machine>
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="1.0" auto-tool-select="true" safe-Z-park="true">
+      <axes>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS185634cb90b88f2c" name="X" type="X" driver-id="DRV185634da70f8d304" letter="X" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.03" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="0.0" units="Millimeters"/>
+            <soft-limit-high value="0.0" units="Millimeters"/>
+            <safe-zone-low value="0.0" units="Millimeters"/>
+            <safe-zone-high value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
+            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS185634cb90bf8aac" name="Y" type="Y" driver-id="DRV185634da70f8d304" letter="Y" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="0.0" units="Millimeters"/>
+            <soft-limit-high value="350.0" units="Millimeters"/>
+            <safe-zone-low value="0.0" units="Millimeters"/>
+            <safe-zone-high value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
+            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
+            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS185994fef34cf54c" name="Z" type="Z" driver-id="DRV185634da70f8d304" letter="Z" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="0.0" units="Millimeters"/>
+            <soft-limit-high value="19.0" units="Millimeters"/>
+            <safe-zone-low value="10.2" units="Millimeters"/>
+            <safe-zone-high value="16.0" units="Millimeters"/>
+            <feedrate-per-second value="250.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="500.0" units="Millimeters"/>
+            <jerk-per-second-3 value="2000.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS185640baac563b30" name="E" type="Rotation" driver-id="DRV185634da70f8d304" letter="E" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="true" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="0.0" units="Millimeters"/>
+            <acceptable-tolerance value="0.025" units="Millimeters"/>
+            <backlash-offset value="0.0" units="Millimeters"/>
+            <sneak-up-offset value="0.0" units="Millimeters"/>
+            <soft-limit-low value="0.0" units="Millimeters"/>
+            <soft-limit-high value="0.0" units="Millimeters"/>
+            <safe-zone-low value="0.0" units="Millimeters"/>
+            <safe-zone-high value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="250.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="500.0" units="Millimeters"/>
+            <jerk-per-second-3 value="2000.0" units="Millimeters"/>
+            <resolution>1.0E-4</resolution>
+         </axis>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceMappedAxis" id="AXS18599544842db96c" name="ZR" type="Z" input-axis-id="AXS185994fef34cf54c">
+            <map-input-0 value="12.4" units="Millimeters"/>
+            <map-output-0 value="0.0" units="Millimeters"/>
+            <map-input-1 value="12.3" units="Millimeters"/>
+            <map-output-1 value="1.0" units="Millimeters"/>
+         </axis>
+      </axes>
+      <heads>
+         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="ResetToFiducialLocation" nozzle-solution="Standalone" nozzle-solutions-multiplier="1">
+            <nozzles>
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS185634cb90b88f2c" axis-Y-id="AXS185634cb90bf8aac" axis-Z-id="AXS18599544842db96c" axis-rotation-id="AXS185640baac563b30" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT1" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
+                  <compatible-nozzle-tip-ids class="java.util.ArrayList">
+                     <string>NT1</string>
+                  </compatible-nozzle-tip-ids>
+                  <head-offsets units="Millimeters" x="23.3" y="-62.87" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <vacuum-actuator-name>Vacuum</vacuum-actuator-name>
+               </nozzle>
+            </nozzles>
+            <actuators>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1856364f2c95a900" name="Vacuum" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV185634da70f8d304" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT18563650f3397018" name="Air" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV185634da70f8d304" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" axis-X-id="AXS185634cb90b88f2c" axis-Y-id="AXS185634cb90bf8aac" id="ACT18563eec50acaeec" name="LIGHT_Z" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV185634da70f8d304" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </actuator>
+            </actuators>
+            <cameras>
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS185634cb90b88f2c" axis-Y-id="AXS185634cb90bf8aac" id="CAM18599bcd79a60b40" name="TopCam" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="false" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="67" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT18563eec50acaeec" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="HD USB Camera \\?\usb#vid_32e4&amp;pid_9310&amp;mi_00#6&amp;35b0e4ec&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" freeze-properties="false">
+                  <units-per-pixel units="Millimeters" x="0.0046252936489572715" y="0.028342658439205134" z="-60.999999999999645" rotation="0.0"/>
+                  <units-per-pixel-secondary units="Millimeters" x="0.007662469939798338" y="0.07989526583570218" z="-52.9999999999995" rotation="0.0"/>
+                  <camera-primary-z value="0.0" units="Millimeters"/>
+                  <camera-secondary-z value="0.0" units="Millimeters"/>
+                  <default-z value="-60.999999999999645" units="Millimeters"/>
+                  <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
+                  <roaming-radius value="0.0" units="Millimeters"/>
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <calibration enabled="false">
+                     <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+                     <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+                  </calibration>
+                  <advanced-calibration enabled="false" overriding-old-transforms-and-distortion-correction-settings="false" valid="false" data-available="true" alpha-percent="100" rotation-error-z="0.0" rotation-error-y="0.0" rotation-error-x="0.0" rms-error="0.0" desired-radial-lines-per-test-pattern="64" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="3397.9510920012067" mirrored="1.0" apparent-motion-direction="-1.0" width-fov="0.0" height-fov="0.0" virtual-width-fov="0.0" virtual-height-fov="0.0" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.5" raw-cropped-image-width="640" raw-cropped-image-height="480">
+                     <camera-matrix length="9">3397.951029953201, 0.0, 399.5, 0.0, 3397.9510922636846, 299.5, 0.0, 0.0, 1.0</camera-matrix>
+                     <distortion-coefficients length="5">-0.07156279066656661, 0.0013144765866529007, 0.0, 0.0, -6.578197946295661E-6</distortion-coefficients>
+                     <pipeline>
+                        <stages>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="image" enabled="true" default-light="true" settle-option="SettleFullArea" count="1"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="detect_circle" enabled="true" min-diameter="18" max-diameter="25" max-distance="100" search-width="0" search-height="0" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.1" inner-margin="0.1" sub-sampling="8" super-sampling="8" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="DetectCircularSymmetry" diagnostics="false" heat-map="false"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertModelToKeyPoints" name="results" enabled="true" model-stage-name="detect_circle"/>
+                        </stages>
+                     </pipeline>
+                     <virtual-camera-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</virtual-camera-matrix>
+                     <rectification-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</rectification-matrix>
+                     <vector-from-mach-to-phy-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-phy-cam-in-mach-ref-frame>
+                     <unit-vector-phy-cam-Z-in-mach-ref-frame length="3">0.0, 0.0, 0.0</unit-vector-phy-cam-Z-in-mach-ref-frame>
+                     <vector-from-mach-to-vir-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-vir-cam-in-mach-ref-frame>
+                     <vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame length="3">0.0, 0.0, 0.0</vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame>
+                     <saved-test-pattern-3-d-points-list length="2">
+                        <double- length="103">-127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -127.35237647972022, -86.72399360439925, 0.0, -132.6918019774521, -86.44292437818413, 0.0, -122.10936290530361, -87.17852827425722, 0.0, -123.33980984131128, -86.40891431685479, 0.0, -122.1644191722035, -86.8227300544172, 0.0, -127.81996420525475, -87.51661613388973, 0.0, -130.17542441047476, -87.26188215109242, 0.0, -122.74347557842846, -86.56990069948331, 0.0, -131.79712125259536, -86.92781422123626, 0.0, -125.93292076406843, -87.59727761383218, 0.0, -122.59926157152006, -86.61855181922353, 0.0, -131.77113120607962, -86.01129928013185, 0.0, -126.55205195827025, -85.95637725157833, 0.0, -125.03810626827325, -86.11419145141471, 0.0, -122.04540103285123, -86.93201727535771, 0.0, -130.80471862620968, -87.15556304793216, 0.0, -122.35932899001638, -87.29937654401476, 0.0, -131.67341890758817, -86.9621918021251, 0.0, -128.5738657385122, -87.4552045856408, 0.0, -122.20960352745165, -87.23791911706215, 0.0, -124.1398824259469, -87.56323229619485, 0.0, -132.30697350909418, -86.13566464505466, 0.0, -123.84855906176219, -86.30214458988438, 0.0, -124.79541698332554, -87.59104421655275, 0.0, -130.06583364263545, -85.86173134256272, 0.0, -122.47828581424343, -87.33689691806532, 0.0, -131.0726831764643, -87.10294200419645, 0.0, -131.49784567613537, -85.97023058096305, 0.0, -127.74756589625919, -87.5216272693698, 0.0, -126.60446244919669, -87.58064083957333, 0.0, -128.97559495286538, -88.25387825088193, 0.0, -126.09703821120362, -88.42802465407718, 0.0, -117.35386431752285, -86.76104077310829, 0.0, -137.9645520022083, -86.01240295336675, 0.0, -131.59338818705533, -87.97423072542894, 0.0, -136.1108232976263, -87.16812011180048, 0.0, -131.57313374188672, -84.98731567755833, 0.0, -117.67606219645371, -87.11738054162839, 0.0, -117.24232566793623, -87.79344360338732, 0.0, -136.29124566361062, -87.97972446551108, 0.0</double->
+                        <double- length="122">-137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -137.4950902790958, -91.62338283392403, -52.9999999999995, -139.49849191413847, -89.75747534130443, -52.9999999999995, -135.55358198584784, -93.52481474242508, -52.9999999999995, -135.45083318029538, -93.23975516175096, -52.9999999999995, -135.8810379365441, -93.49486334432551, -52.9999999999995, -137.98085178562394, -90.39916306211458, -52.9999999999995, -137.4910544405972, -90.78491741337457, -52.9999999999995, -135.55855456837634, -92.95900285953792, -52.9999999999995, -139.543339315633, -89.98756949840771, -52.9999999999995, -137.2909152472562, -92.63179700607438, -52.9999999999995, -135.6229832826103, -93.5375324806036, -52.9999999999995, -139.19175367769205, -90.68053664419214, -52.9999999999995, -137.11040997987385, -91.11806297585744, -52.9999999999995, -136.33958998902298, -91.89316289037065, -52.9999999999995, -136.1352904436835, -92.12881442463299, -52.9999999999995, -135.50482453363514, -93.50010468596614, -52.9999999999995, -139.47585808286075, -90.19392530908037, -52.9999999999995, -138.6446255255662, -91.36024235685368, -52.9999999999995, -135.65762866855584, -92.78154548204695, -52.9999999999995, -138.54943188492203, -91.46457594611644, -52.9999999999995, -138.98946263814273, -89.79533920951381, -52.9999999999995, -136.13125356161805, -93.39398451629714, -52.9999999999995, -136.30547147612984, -93.3048910791545, -52.9999999999995, -139.09423373979158, -90.81563656860446, -52.9999999999995, -138.15631811219293, -91.86762211176152, -52.9999999999995, -138.98455325051444, -90.95847361627297, -52.9999999999995, -135.4717803220078, -93.46668199983125, -52.9999999999995, -136.77082501226496, -93.0169352904877, -52.9999999999995, -139.4941676399677, -89.75363419140854, -52.9999999999995, -137.05910879000058, -92.81066144285306, -52.9999999999995, -139.5506344396268, -89.87450888871945, -52.9999999999995, -138.61251300483045, -91.39577501546097, -52.9999999999995, -136.04332207971143, -92.24099155841739, -52.9999999999995, -138.65641075190075, -89.95747108858515, -52.9999999999995, -136.5572483588375, -91.65836248015698, -52.9999999999995, -135.6997193795382, -93.53543961896668, -52.9999999999995, -139.5364424246329, -89.81325261978479, -52.9999999999995, -135.49101237668435, -93.10970642283759, -52.9999999999995, -139.16240419758094, -89.73621545869648, -52.9999999999995, -135.29164102296645, -92.06650111667503, -52.9999999999995, -134.74300741845474, -92.69747465920415, -52.9999999999995, -133.7863694970235, -94.1369947862877, -52.9999999999995, -135.030669940456, -95.03152993580396, -52.9999999999995, -133.84067578862414, -95.4231867819203, -52.9999999999995, -140.6276819346281, -87.9164224987871, -52.9999999999995, -141.5806960095249, -88.16830355640361, -52.9999999999995, -141.44046333195854, -87.90267614274451, -52.9999999999995, -140.77808278082094, -89.89106972101723, -52.9999999999995, -133.86090569019603, -95.45026020227641, -52.9999999999995, -133.65272820792867, -94.27002023618986, -52.9999999999995, -134.34294999905637, -95.3399373773768, -52.9999999999995, -140.7742484987848, -87.86543924381485, -52.9999999999995, -141.31047935930758, -87.83978903118367, -52.9999999999995, -131.74242538975366, -95.94030344364188, -52.9999999999995, -142.23808345195175, -86.04999529438909, -52.9999999999995, -142.4941994703136, -88.92012511499136, -52.9999999999995, -131.83724640618388, -97.29306743154648, -52.9999999999995, -132.99184789542417, -96.84761074112417, -52.9999999999995, -130.7290924991313, -98.92891744575162, -52.9999999999995</double->
+                     </saved-test-pattern-3-d-points-list>
+                     <saved-test-pattern-image-points-list length="2">
+                        <double- length="103">418.5, 396.5, 370.5, 296.5, 425.25, 251.25, 444.5, 252.0, 461.875, 328.625, 453.5, 321.5, 387.5, 325.5, 467.5, 332.5, 461.5, 333.5, 454.0, 252.25, 391.5, 320.5, 425.25, 251.25, 468.5, 329.5, 432.5, 251.5, 388.625, 330.875, 414.875, 235.875, 460.875, 333.625, 398.25, 402.75, 454.625, 269.625, 468.125, 329.5, 466.0, 328.5, 461.625, 330.5, 453.875, 274.375, 377.25, 284.875, 432.5, 246.5, 433.625, 231.125, 462.5, 329.5, 431.75, 247.75, 441.5, 316.5, 346.375, 343.875, 480.125, 339.75, 426.25, 247.25, 427.5, 247.5, 432.625, 254.5, 465.5, 328.5, 391.875, 337.375, 470.5, 326.5, 428.0, 337.0, 423.125, 228.375, 356.0, 247.5, 430.5, 263.5, 376.5, 327.5, 424.5, 244.5, 461.875, 333.375, 467.875, 329.375, 465.875, 332.5, 427.25, 247.75, 429.5, 250.5, 467.5, 332.5, 450.5, 340.5, 467.5, 334.5, 398.5, 280.5, 415.5, 309.5, 468.125, 329.5, 460.625, 333.5, 460.0, 332.5, 394.5, 325.5, 387.5, 325.5, 468.125, 329.5, 409.125, 311.5, 471.5, 298.5, 460.875, 332.625, 451.0, 239.875, 388.75, 325.25, 350.25, 341.875, 455.125, 228.625, 399.5, 222.5, 371.5, 214.5, 394.375, 315.0, 530.5, 355.5, 547.75, 91.75, 522.625, 326.625, 321.5, 318.5, 436.5, 251.5, 417.5, 298.5, 386.875, 222.0, 537.125, 313.5, 262.375, 88.625, 444.875, 307.625, 302.375, 329.375, 464.75, 352.75, 287.75, 530.75, 452.125, 353.5, 328.625, 340.625, 377.5, 345.5, 276.625, 202.625, 338.125, 339.875, 516.625, 343.625, 259.75, 207.75, 377.25, 304.75, 451.5, 273.5, 260.375, 208.625, 352.5, 314.625, 377.5, 364.5, 369.125, 372.875, 334.25, 94.25, 571.125, 332.875, 509.5, 368.5, 668.375, 381.0, 683.625, 399.375, 324.5, 113.875, 350.875, 387.0, 569.875, 594.125</double->
+                        <double- length="122">409.25, 352.75, 397.5, 344.5, 426.25, 348.375, 413.875, 351.25, 404.25, 350.25, 458.375, 337.875, 441.875, 334.625, 453.5, 338.5, 458.125, 332.625, 458.5, 333.125, 313.125, 236.625, 458.5, 332.5, 456.5, 337.5, 456.125, 337.625, 451.875, 337.5, 414.375, 353.375, 397.25, 293.75, 452.625, 333.125, 357.125, 264.5, 458.375, 337.375, 453.375, 338.375, 369.375, 258.375, 458.125, 337.5, 458.875, 333.375, 460.375, 333.375, 457.625, 333.125, 407.125, 243.5, 386.75, 262.25, 452.125, 337.5, 456.625, 337.625, 409.75, 377.75, 452.875, 338.5, 325.875, 267.5, 452.625, 333.125, 457.5, 332.5, 409.25, 352.375, 453.75, 332.25, 421.5, 305.5, 451.25, 337.5, 376.625, 280.625, 457.375, 337.5, 457.875, 333.5, 456.75, 335.75, 447.5, 334.5, 420.75, 329.75, 453.125, 333.375, 341.5, 342.125, 466.375, 248.375, 452.5, 333.5, 458.125, 333.625, 453.875, 334.625, 452.875, 333.375, 442.5, 330.5, 330.5, 323.125, 458.875, 337.5, 460.375, 333.375, 457.125, 337.625, 456.75, 337.75, 452.125, 337.375, 417.25, 251.625, 452.5, 337.5, 349.5, 210.5, 456.875, 332.375, 459.875, 337.5, 363.625, 214.625, 430.5, 349.5, 345.5, 365.5, 453.5, 361.5, 453.375, 361.375, 512.375, 371.375, 441.25, 403.75, 408.5, 279.5, 339.25, 358.75, 338.625, 357.375, 513.5, 288.75, 391.75, 276.75, 556.25, 348.25, 467.5, 451.5, 332.5, 477.125, 391.625, 291.375, 274.75, 222.75, 512.375, 371.375, 410.75, 321.125, 502.375, 352.375, 336.625, 357.375, 338.625, 357.25, 410.75, 280.25, 391.875, 276.625, 343.875, 354.625, 333.5, 377.5, 326.5, 291.5, 391.375, 277.625, 272.75, 356.125, 269.5, 208.5, 419.75, 328.75, 439.5, 348.5, 566.75, 200.25, 465.875, 370.625, 440.5, 323.375, 390.875, 280.5, 426.375, 297.375, 371.5, 294.375, 521.5, 529.125, 521.375, 529.375, 495.625, 384.625, 176.375, 183.625, 389.75, 493.75, 633.75, 332.75, 506.375, 45.625, 430.5, 277.5, 399.625, 267.375, 292.75, 393.25, 498.5, 512.5, 242.5, 388.5, 359.875, 243.5, 376.5, 254.5, 334.75, 514.625, 616.25, 204.75, 287.5, 108.5, 355.75, 528.25, 210.5, 226.5, 260.75, 447.75</double->
+                     </saved-test-pattern-image-points-list>
+                     <modeled-test-pattern-image-points-list length="2">
+                        <double-/>
+                        <double-/>
+                     </modeled-test-pattern-image-points-list>
+                     <outlier-points length="0"/>
+                     <trial-step value="0.5" units="Millimeters"/>
+                     <calibrated-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  </advanced-calibration>
+                  <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
+                     <focal-resolution value="0.05" units="Millimeters"/>
+                  </focus-provider>
+                  <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
+                  <brightness property="Brightness" value="-11" auto="false"/>
+                  <contrast property="Contrast" value="126" auto="false"/>
+                  <exposure property="Exposure" value="-7" auto="false"/>
+                  <focus property="Focus"/>
+                  <gain property="Gain" value="52" auto="false"/>
+                  <gamma property="Gamma" value="262" auto="false"/>
+                  <hue property="Hue" value="-1" auto="false"/>
+                  <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
+                  <saturation property="Saturation" value="78" auto="false"/>
+                  <sharpness property="Sharpness" value="0" auto="false"/>
+                  <white-balance property="WhiteBalance" value="5012" auto="false"/>
+                  <zoom property="Zoom"/>
+               </camera>
+            </cameras>
+            <park-location units="Millimeters" x="6.194" y="26.954" z="0.0" rotation="0.0"/>
+            <soft-limits-enabled>false</soft-limits-enabled>
+            <pump-actuator-name>Air</pump-actuator-name>
+            <homing-fiducial-location units="Millimeters" x="6.194" y="26.954" z="0.0" rotation="0.0"/>
+            <calibration-primary-fiducial-location units="Millimeters" x="6.8" y="27.005" z="0.0" rotation="0.0"/>
+            <calibration-secondary-fiducial-location units="Millimeters" x="16.494" y="16.954" z="0.0" rotation="0.0"/>
+            <calibration-primary-fiducial-diameter value="30.0" units="Millimeters"/>
+            <calibration-secondary-fiducial-diameter value="30.0" units="Millimeters"/>
+         </head>
+      </heads>
+      <signalers/>
+      <feeders>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR185a14e647f86ac4" name="ReferenceStripFeeder" enabled="false" part-id="FIDUCIAL-HOME" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="false" feed-count="9" max-feed-count="0">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="90.0"/>
+            <reference-hole-location units="Millimeters" x="275.494" y="20.174" z="-61.18" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="275.494" y="16.074" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
+            <pipeline>
+               <stages>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-option="Settle" count="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5" property-name="BlurGaussian"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="false" kernel-size="7"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                  </cv-stage>
+               </stages>
+            </pipeline>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR185a22c2d72680d4" name="ReferenceTrayFeeder" enabled="true" part-id="DK_1292-1580-1-ND" retry-count="3" feed-retry-count="3" pick-retry-count="2" tray-count-x="100" tray-count-y="100" feed-count="2">
+            <location units="Millimeters" x="276.214" y="20.174" z="-61.5" rotation="90.0"/>
+            <offsets units="Millimeters" x="0.0" y="-4.0" z="0.0" rotation="0.0"/>
+         </feeder>
+      </feeders>
+      <cameras>
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM18563983e5c3b87c" name="BottomCam" looking="Up" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="false" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="9" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1859efa1f0342b70" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="HD USB Camera \\?\usb#vid_32e4&amp;pid_9310&amp;mi_00#6&amp;35b0e4ec&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="7" freeze-properties="false">
+            <units-per-pixel units="Millimeters" x="0.02617801" y="0.02617801" z="0.0" rotation="0.0"/>
+            <camera-primary-z value="0.0" units="Millimeters"/>
+            <default-z value="0.0" units="Millimeters"/>
+            <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
+            <roaming-radius value="0.0" units="Millimeters"/>
+            <head-offsets units="Millimeters" x="126.494" y="42.684" z="-46.0" rotation="0.0"/>
+            <calibration enabled="false">
+               <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+               <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+            </calibration>
+            <advanced-calibration enabled="false" overriding-old-transforms-and-distortion-correction-settings="false" valid="false" data-available="true" alpha-percent="100" rotation-error-z="0.0" rotation-error-y="0.0" rotation-error-x="0.0" rms-error="0.0" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="1000.0" mirrored="-1.0" apparent-motion-direction="1.0" width-fov="0.0" height-fov="0.0" virtual-width-fov="0.0" virtual-height-fov="0.0" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.5" raw-cropped-image-width="1280" raw-cropped-image-height="720">
+               <camera-matrix length="9">NaN, 0.0, 639.5, 0.0, NaN, 359.5, 0.0, 0.0, 1.0</camera-matrix>
+               <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+               <pipeline>
+                  <stages>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="image" enabled="true" default-light="true" settle-option="SettleFullArea" count="1"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="detect_circle" enabled="true" min-diameter="18" max-diameter="25" max-distance="100" search-width="0" search-height="0" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.1" inner-margin="0.1" sub-sampling="8" super-sampling="8" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="DetectCircularSymmetry" diagnostics="false" heat-map="false"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertModelToKeyPoints" name="results" enabled="true" model-stage-name="detect_circle"/>
+                  </stages>
+               </pipeline>
+               <virtual-camera-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</virtual-camera-matrix>
+               <rectification-matrix length="9">1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0</rectification-matrix>
+               <vector-from-mach-to-phy-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-phy-cam-in-mach-ref-frame>
+               <unit-vector-phy-cam-Z-in-mach-ref-frame length="3">0.0, 0.0, 0.0</unit-vector-phy-cam-Z-in-mach-ref-frame>
+               <vector-from-mach-to-vir-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-vir-cam-in-mach-ref-frame>
+               <vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame length="3">0.0, 0.0, 0.0</vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame>
+               <saved-test-pattern-3-d-points-list length="2">
+                  <double- length="43">-0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 0.0</double->
+                  <double- length="48">-0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0, -0.0, 0.0, 2.0</double->
+               </saved-test-pattern-3-d-points-list>
+               <saved-test-pattern-image-points-list length="2">
+                  <double- length="43">635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.8125, 343.75, 635.75, 344.0, 635.75, 344.0, 635.6875, 343.9375, 635.75, 344.0, 635.75, 344.0, 635.8125, 343.75, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.6875, 343.9375, 635.6875, 343.9375, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.6875, 343.9375, 635.75, 344.0, 635.6875, 343.9375, 635.6875, 343.9375, 635.75, 344.0, 635.6875, 343.9375, 635.8125, 343.75, 635.6875, 343.9375, 635.6875, 343.9375, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.5625, 344.0, 635.6875, 344.0, 635.75, 344.0, 594.25, 299.6875, 635.6875, 344.0, 635.6875, 343.9375, 550.0, 281.5</double->
+                  <double- length="48">635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.6875, 344.0, 635.75, 344.0, 635.625, 344.0, 635.75, 344.0, 635.625, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.5, 344.0, 635.625, 344.0, 635.6875, 344.0, 635.6875, 344.0, 635.625, 344.0, 635.75, 344.0, 635.75, 344.0, 635.75, 344.0, 635.6875, 344.0, 635.625, 344.0, 635.75, 344.0, 635.75, 344.0, 635.625, 344.0, 635.625, 344.0, 635.625, 344.0, 635.625, 343.9375, 635.625, 344.0, 635.6875, 344.0, 635.75, 344.0, 635.75, 344.0, 635.6875, 344.0, 635.6875, 344.0, 635.625, 344.0, 635.5625, 344.0, 635.6875, 344.0, 635.5, 344.0, 635.375, 344.0625, 635.75, 344.0, 635.625, 344.0</double->
+               </saved-test-pattern-image-points-list>
+               <modeled-test-pattern-image-points-list length="2">
+                  <double-/>
+                  <double-/>
+               </modeled-test-pattern-image-points-list>
+               <outlier-points length="0"/>
+               <trial-step value="0.5" units="Millimeters"/>
+               <calibrated-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            </advanced-calibration>
+            <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
+               <focal-resolution value="0.05" units="Millimeters"/>
+            </focus-provider>
+            <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
+            <brightness property="Brightness" value="-11" auto="false"/>
+            <contrast property="Contrast" value="126" auto="false"/>
+            <exposure property="Exposure" value="-7" auto="false"/>
+            <focus property="Focus"/>
+            <gain property="Gain" value="52" auto="false"/>
+            <gamma property="Gamma" value="262" auto="false"/>
+            <hue property="Hue" value="-1" auto="false"/>
+            <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
+            <saturation property="Saturation" value="78" auto="false"/>
+            <sharpness property="Sharpness" value="0" auto="false"/>
+            <white-balance property="WhiteBalance" value="5012" auto="false"/>
+            <zoom property="Zoom"/>
+         </camera>
+      </cameras>
+      <actuators>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1859efa1f0342b70" name="LIGHT_FLAT" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV185634da70f8d304" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+      </actuators>
+      <part-alignments>
+         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS_Default" enabled="true" pre-rotate="false" max-vision-passes="3" max-angular-offset="10.0" test-alignment-angle="90.0">
+            <max-linear-offset value="1.0" units="Millimeters"/>
+         </part-alignment>
+      </part-alignments>
+      <drivers>
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV185634da70f8d304" name="Klipper" motion-control-type="ToolpathFeedRate" communications="tcp" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="5000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="20000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
+            <serial line-ending-type="LF" port-name="" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+            <tcp line-ending-type="LF" ip-address="127.0.0.1" port="5000" name="TcpCommunications"/>
+            <simulated line-ending-type="LF"/>
+            <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <detected-firmware><![CDATA[FIRMWARE_NAME:GcodeServer, FIRMWARE_URL:http%3A//openpnp.org, X-SOURCE_CODE_URL:https%3A//github.com/openpnp/openpnp, FIRMWARE_VERSION:2025-02-02_20-41-38.e468422, X-FIRMWARE_BUILD_DATE:Oct 23 2020 00:00:00]]></detected-firmware>
+            <command type="COMMAND_CONFIRM_REGEX">
+               <text><![CDATA[(?m)^ok\b]]></text>
+            </command>
+            <command type="COMMAND_ERROR_REGEX">
+               <text><![CDATA[(?m)^!!|^Error:]]></text>
+            </command>
+            <command type="CONNECT_COMMAND">
+               <text><![CDATA[G90]]></text>
+               <text><![CDATA[M83]]></text>
+            </command>
+            <command type="HOME_COMPLETE_REGEX">
+               <text><![CDATA[^ok]]></text>
+            </command>
+            <command type="GET_POSITION_COMMAND">
+               <text><![CDATA[M114]]></text>
+            </command>
+            <command type="MOVE_TO_COMMAND">
+               <text><![CDATA[G1 {X:X%.4f}{Y:Y%.4f}{Z:Z%.4f}{E:E%.4f}F{FeedRate:%.0f}]]></text>
+            </command>
+            <command type="MOVE_TO_COMPLETE_REGEX">
+               <text><![CDATA[^ok]]></text>
+            </command>
+            <command type="ACTUATOR_READ_COMMAND">
+               <text><![CDATA[M105]]></text>
+            </command>
+            <command type="ACTUATOR_READ_REGEX">
+               <text><![CDATA[(?m)^ok\b]]></text>
+            </command>
+            <command head-mountable-id="ACT1856364f2c95a900" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:VAC_ON}{False:VAC_OFF}]]></text>
+            </command>
+            <command head-mountable-id="ACT18563650f3397018" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:AIR_ON}{False:AIR_OFF}]]></text>
+            </command>
+            <command type="HOME_COMMAND">
+               <text><![CDATA[OPNP_HOME]]></text>
+            </command>
+            <command type="POSITION_REPORT_REGEX">
+               <text><![CDATA[(?i)X:(?<X>-?\d+\.?\d*)\s+Y:(?<Y>-?\d+\.?\d*)\s+Z:(?<Z>-?\d+\.?\d*)\s+E:(?<E>-?\d+\.?\d*)]]></text>
+            </command>
+            <command head-mountable-id="ACT1859ef526910404c" type="ACTUATE_DOUBLE_COMMAND">
+               <text><![CDATA[{True:F_ON}{False:F_OFF}]]></text>
+            </command>
+            <command head-mountable-id="ACT18563eec50acaeec" type="ACTUATE_DOUBLE_COMMAND">
+               <text><![CDATA[{True:Z_ON}{False:Z_OFF}]]></text>
+            </command>
+            <command head-mountable-id="ACT1859efa1f0342b70" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:SET_FAN_SPEED FAN=light_flat SPEED=1.0}{False:SET_FAN_SPEED FAN=light_flat SPEED=0.0}]]></text>
+            </command>
+            <command head-mountable-id="ACT18563eec50acaeec" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:SET_FAN_SPEED FAN=light_z SPEED=1.0}{False:SET_FAN_SPEED FAN=light_z SPEED=0.0}]]></text>
+            </command>
+            <send-on-change-feed-rate send-on-change="false" relative-deviation="0.001" variable="FeedRate"/>
+            <send-on-change-acceleration send-on-change="false" relative-deviation="0.001" variable="Acceleration"/>
+            <send-on-change-jerk send-on-change="false" relative-deviation="0.001" variable="Jerk"/>
+         </driver>
+      </drivers>
+      <discard-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+      <default-board-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+      <properties>
+         <entry>
+            <string>CameraCalibrationProcessProperties</string>
+            <object class="org.openpnp.gui.processes.CalibrateCameraProcess$CameraCalibrationProcessProperties">
+               <max-allowed-pixel-step-factor>0.08333333333333333</max-allowed-pixel-step-factor>
+               <min-allowed-pixel-step-factor>0.027777777777777776</min-allowed-pixel-step-factor>
+               <change-mask-threshold>3</change-mask-threshold>
+               <mask-growth-threshold-factor>0.7</mask-growth-threshold-factor>
+               <mask-shrink-thresholdfactor>0.1</mask-shrink-thresholdfactor>
+               <mask-growth-factor>0.1</mask-growth-factor>
+               <mask-shrinkfactor>0.05</mask-shrinkfactor>
+               <initial-mask-diameter-fraction>0.25</initial-mask-diameter-fraction>
+               <centering-diameter-fraction>0.5</centering-diameter-fraction>
+               <max-error-count>15</max-error-count>
+               <default-detection-diameter>25</default-detection-diameter>
+               <default-up-looking-secondary-offset-Z-mm>2.0</default-up-looking-secondary-offset-Z-mm>
+            </object>
+         </entry>
+         <entry>
+            <string>MultiPlacementBoardLocationProperties</string>
+            <object class="org.openpnp.gui.processes.MultiPlacementBoardLocationProcess$MultiPlacementBoardLocationProperties">
+               <scaling-tolerance>0.05</scaling-tolerance>
+               <shearing-tolerance>0.05</shearing-tolerance>
+               <board-location-tolerance value="5.0" units="Millimeters"/>
+               <auto-move-for-all-placements>true</auto-move-for-all-placements>
+            </object>
+         </entry>
+         <entry>
+            <string>Welcome2_0_Dialog_Shown</string>
+            <object class="java.lang.Boolean">true</object>
+         </entry>
+      </properties>
+      <nozzle-tips>
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="Juki500" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+            <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
+            <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <changer-mid-to-mid-2-speed>1.0</changer-mid-to-mid-2-speed>
+            <changer-mid-location-2 units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
+            <changer-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <touch-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <vision-calibration-Z-adjust value="0.0" units="Millimeters"/>
+            <vision-template-dimension-x value="10.0" units="Millimeters"/>
+            <vision-template-dimension-y value="10.0" units="Millimeters"/>
+            <vision-template-tolerance value="4.0" units="Millimeters"/>
+            <vision-calibration-tolerance value="0.7" units="Millimeters"/>
+            <min-part-diameter value="3.0" units="Millimeters"/>
+            <max-part-diameter value="20.0" units="Millimeters"/>
+            <max-part-height value="5.0" units="Millimeters"/>
+            <max-pick-tolerance value="10.0" units="Millimeters"/>
+            <calibration angle-subdivisions="6" allow-misdetections="6" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="BrightnessAndKeyColor" background-min-hue="71" background-max-hue="113" background-tol-hue="8" background-min-saturation="63" background-max-saturation="148" background-tol-saturation="8" background-min-value="128" background-max-value="207" background-tol-value="8" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+               <pipeline>
+                  <stages>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
+                        <light class="java.lang.Boolean">true</light>
+                     </cv-stage>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_source_" suffix=".png"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="2" enabled="false" kernel-size="7" property-name="BlurGaussian"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="results" enabled="true" min-diameter="30" max-diameter="50" max-distance="200" search-width="0" search-height="0" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.2" inner-margin="0.4" sub-sampling="8" super-sampling="1" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="nozzleTip" diagnostics="false" heat-map="false"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="4" enabled="true" circles-stage-name="results" thickness="2">
+                        <color r="255" g="0" b="51" a="255"/>
+                        <center-color r="0" g="204" b="255" a="255"/>
+                     </cv-stage>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
+                  </stages>
+               </pipeline>
+               <runout-compensation-lookup class="java.util.HashMap"/>
+               <minimum-detail-size value="0.2" units="Millimeters"/>
+               <offset-threshold-length value="0.5" units="Millimeters"/>
+               <calibration-Z-offset value="0.0" units="Millimeters"/>
+               <calibration-tip-diameter value="0.0" units="Millimeters"/>
+            </calibration>
+            <method-part-on>None</method-part-on>
+            <part-on-check-after-pick>true</part-on-check-after-pick>
+            <part-on-check-align>true</part-on-check-align>
+            <part-on-check-before-place>true</part-on-check-before-place>
+            <vacuum-level-part-on-low>0.0</vacuum-level-part-on-low>
+            <vacuum-level-part-on-high>0.0</vacuum-level-part-on-high>
+            <vacuum-difference-part-on-low>0.0</vacuum-difference-part-on-low>
+            <vacuum-difference-part-on-high>0.0</vacuum-difference-part-on-high>
+            <method-part-off>None</method-part-off>
+            <part-off-check-after-place>true</part-off-check-after-place>
+            <part-off-check-before-pick>true</part-off-check-before-pick>
+            <vacuum-level-part-off-low>0.0</vacuum-level-part-off-low>
+            <vacuum-level-part-off-high>0.0</vacuum-level-part-off-high>
+            <vacuum-difference-part-off-low>0.0</vacuum-difference-part-off-low>
+            <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
+            <diameter-low value="0.5" units="Millimeters"/>
+         </nozzle-tip>
+      </nozzle-tips>
+      <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" job-order="PartHeight" max-vision-retries="3" stepping-to-next-motion="true" optimize-multiple-nozzles="true" allow-immediate-nozzle-tip-calibration="false" fiducial-level="1">
+         <planner class="org.openpnp.machine.reference.ReferencePnpJobProcessor$SimplePnpJobPlanner" strategy="Minimize"/>
+      </pnp-job-processor>
+      <fiducial-locator class="org.openpnp.machine.reference.vision.ReferenceFiducialLocator" fiducial-vision-id="FVS_Default" enabled-averaging="true">
+         <max-distance value="1.0" units="Millimeters"/>
+         <tolerances>
+            <scaling-tolerance>0.05</scaling-tolerance>
+            <shearing-tolerance>0.05</shearing-tolerance>
+            <board-location-tolerance value="5.0" units="Millimeters"/>
+         </tolerances>
+      </fiducial-locator>
+      <motion-planner class="org.openpnp.machine.reference.driver.NullMotionPlanner" maximum-plan-history="60.0"/>
+      <home-after-enabled>false</home-after-enabled>
+      <park-after-homed>false</park-after-homed>
+      <unsafe-Z-roaming-distance value="10.0" units="Millimeters"/>
+      <pool-scripting-engines>false</pool-scripting-engines>
+      <auto-load-most-recent-job>false</auto-load-most-recent-job>
+      <solutions show-indicator="true" target-milestone="Production">
+         <dismissed-solutions class="java.util.HashSet">
+            <string>fac2e7a4375c8cab18454204fe2cc8349e1fc77b</string>
+            <string>448da65c9b7fe0a4b3c5d5157dbeec267ea7d06b</string>
+            <string>8b5ba5ef2634addb6f2581f7dcef633657eba7fb</string>
+            <string>4cfccdb6189be00811d0ba64fcb2e25386f1eaac</string>
+            <string>85552a35e49f8a3244ba24e7c6fa36149ea13aa0</string>
+            <string>e16a5b4b30e3bc3fdf0f3adb655ed17e2eeda7e5</string>
+            <string>5fe4fde4586c3b579a1220d81b6ea97bd33b3202</string>
+            <string>2c7bd4c0fafd14094f3f563b6b20e91062cd0e96</string>
+            <string>41661b34546a4e75c2646397c5825c0f8cb4bdad</string>
+            <string>ba42d724734bbbbd2f01cc320125d4235c5da5cc</string>
+            <string>6c545013589432575480f28fccaa24105d5ef119</string>
+            <string>f0d0d9b49329eaff8ecd9da39316befd47107160</string>
+            <string>3d7739c4cdcf10fa2657af30386686a4b9cee4c2</string>
+            <string>8e6005065eb34c90f12de08bc9037d2c64a8dc45</string>
+            <string>8f7fb6bdfed56010cb007058163177c2da6c5cc7</string>
+            <string>62ae688b68b9a018c1b7965d653a5cf41b9b8b6c</string>
+            <string>4b17336591d17c9331ab92fd4e8e24ab104471e0</string>
+            <string>454559862b974f7dea9c67ef76c348103e015530</string>
+            <string>d65fc8aa831bf546c59c33b25b64f272744b3a8b</string>
+         </dismissed-solutions>
+         <solved-solutions class="java.util.HashSet">
+            <string>947dd5a3c6e9e7e6b4479fc77c9f30c92e66fa31</string>
+            <string>ac58718e8031277587fcbd62c5eb843ef641a1da</string>
+            <string>80aa8466796fc492fb9cefbc0bc45e33dc471dce</string>
+         </solved-solutions>
+      </solutions>
+      <visual-solutions min-symmetry="1.5" sub-sampling="8" super-sampling="4" symmetry-score="OverallVarianceVsRingVarianceSum" diagnostics-milliseconds="4000" max-camera-relative-fiducial-area-diameter="0.2" max-camera-relative-subject-diameter="0.7" zero-knowledge-displacement-ratio="0.2" zero-knowledge-displacement-mm="1.0" fiducials-minimum-Z-offset-mm="2.0" zero-knowledge-fiducial-locator-passes="3" fiducial-margin="1.1" zero-knowledge-runout-compensation-shots="2" zero-knowledge-auto-focus-depth-mm="2.0" zero-knowledge-backlash-speed="0.2" zero-knowledge-settle-time-ms="600" settle-wanted-resolution-mm="0.05" settle-acceptable-compute-time="25.0" settle-maximum-pixel-diff="8.0" settle-test-move-mm="1.0">
+         <zero-knowledge-backlash-offsets units="Millimeters" x="-1.0" y="-1.0" z="0.0" rotation="-5.0"/>
+      </visual-solutions>
+      <calibration-solutions backlash-calibration-passes="4" error-dampening="0.9" backlash-test-move-mm="10.0" backlash-test-move-large-mm="90.0" step-test-mm="1.0" max-sneak-up-offset-mm="2.5" acceptable-sneak-up-offset-mm="0.8" backlash-distance-factor="1.4142135623730951" nozzle-offset-angles="6" extra-vacuum-dwell-ms="300" machine-settle-ms="500" up-looking-secondary-offset-Z-mm="2.0" automation-level="2">
+         <backlash-probing-speeds length="5">0.25, 0.33, 0.5, 0.75, 1.0</backlash-probing-speeds>
+      </calibration-solutions>
+   </machine>
+</openpnp-machine>
