@@ -1,4 +1,4 @@
-# Step 6 — Bill of Materials (BOM)
+# Step 1 — Bill of Materials (BOM)
 
 **This build is inspired by the LumenPnP v4 project.** Most 3D printables and the stopper PCB originate from LumenPnP v4.
 
