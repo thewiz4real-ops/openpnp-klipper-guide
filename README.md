@@ -29,7 +29,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - **Attribution:** This machine is **inspired by the LumenPnP open‑source project (v4)**. Most **3D printables** and the **stopper PCB** come from the LumenPnP v4 project.
 - **Do not overwrite your own `machine.xml`:** The example in `configs/machine.xml` is **guidance only**. **Do not** replace your working OpenPnP `machine.xml` with it; copy settings over selectively.
-- **BOM:** The bill of materials is now in **[docs/60-bom.md](docs/60-bom.md)**.
+- **BOM:** The bill of materials is now in **[10-bom.md](docs/10-bom.md)**.
 - **Where to put the ring‑light KiCad project:** place it under **`hardware/ringlight-24v-2x4-osram/`**. (See **hardware/README.md** for folder layout.)
 
 *Notes updated: 2025-08-13 21:35*
