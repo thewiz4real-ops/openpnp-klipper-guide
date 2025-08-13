@@ -1,4 +1,4 @@
-# Step 3 — OpenPnP ↔ Klipper via TCP (Windows ↔ Ubuntu/WSL)
+# Step 4 — OpenPnP ↔ Klipper via TCP (Windows ↔ Ubuntu/WSL)
 
 **Goal:** Run OpenPnP on Windows, Klipper in Ubuntu/WSL, connected over TCP.
 
