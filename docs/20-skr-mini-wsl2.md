@@ -1,4 +1,4 @@
-# Step 1 — SKR Mini E3 V3 + Klipper on Windows (WSL2)
+# Step 2 — SKR Mini E3 V3 + Klipper on Windows (WSL2)
 
 **Goal:** Flash Klipper to SKR Mini E3 V3.0 and run Klipper host in Ubuntu (WSL2) on Windows.
 
