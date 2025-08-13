@@ -1,4 +1,4 @@
-# Step (Boot) — Before Starting OpenPnP (Windows + Ubuntu/WSL)
+# Step 2.5 (Boot) — Before Starting OpenPnP (Windows + Ubuntu/WSL)
 
 **Purpose:** These commands are the *per‑boot* steps you run **every time** you start Windows **before** launching OpenPnP.
 They are **not** part of the installation process.
