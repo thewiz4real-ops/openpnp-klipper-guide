@@ -20,7 +20,7 @@
 - **Problem:** First command times out  
   **Solution:** Add `M105` to connect sequence; increase timeout.
 
-- **Problem:** `{x:X...}` literal text in Klipper logs  
+- **Problem:** `{X:X...}` literal text in Klipper logs  
   **Solution:** Use the exact G1 template and enable “using‑letter‑variables”.
 
 - **Problem:** Firmware detection nag  
